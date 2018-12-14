@@ -1,0 +1,31 @@
+body {
+  background-image: url("../images/Liverpool dock biomass.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  font-size: 16px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+th {
+  padding: 10px 0;
+  text-align: center;
+}
+
+td {
+  padding: 10px 0;
+}
+
+li {
+  font-size: 16px;
+}
+
+.border {
+  position: relative;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Careers</title>
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  </head>
+  <body>
+    <!-- Page Header -->
+    <h1>Careers</h1>
+    <!-- List of jobs -->
+    <div class="job-list">
+      <ul>
+        <li>
+          <ul>
+            <li>Milker</li>
+            <li>40 hours</li>
+            <li>£20,000 per anum</li>
+            <li><a href="#modal-main" class="milker" rel="modal:open">Inquire?</a></li>
+          </ul>
+          <ul>
+            <li>Administrator</li>
+            <li>40 hours</li>
+            <li>£20,000 per anum</li>
+            <li><a href="#modal-main" class="admin" rel="modal:open">Inquire?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- This Div contains everything that will show on the popup -->
+    <div id="modal-main" class="modal">
+      <h2>Interested?</h2>
+      <h2 id="job-title">Job Name</h2>
+      <form class="modal-form" action="index.html" method="post">
+        <label for="first-name">First Name: </label>
+        <input id="first-name-field" type="text" name="first-name">
+        <label for="surname-field">Last Name: </label>
+        <input id="surname-field" type="text" name="surname">
+        <label for="DOB-field">Date of birth: </label>
+        <input id="DOB-field" type="date" name="date-of-birth">
+        <label for="contact-field">Email: </label>
+        <input id="contact-field" type="email" name="contact-info">
+        <input type="submit" name="submit" value="submit">
+      </form>
+    </div>
+  <script>
+    //current job title
+    var job = "";
+
+    //this function is called an event listener. It specifies some action to take
+    //whenever an event happens.
+    //in this case the event is a click, happening on any <a> in the div with class "job-list"
+    $('.job-list').find('a').click(function(){
+      //this stuff happens when the inquire link is clicked
+      //this code checks the class of the link that was clicked and based of that
+      //gives the popup a title so the user knows which job they are talking about
+      if ($(this).hasClass('milker')){
+        job = "Milker";
+      } else if ($(this).hasClass('admin')) {
+        job = "Admin";
+      }
+      $('#job-title').text(job);
+    })
+  </script>
+  </body>
+</html>

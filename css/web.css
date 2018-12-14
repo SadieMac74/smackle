@@ -1,0 +1,54 @@
+body {
+  font-family: 'Londrina Solid';
+}
+
+.main {
+  margin-top: 50px;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Londrina Solid';
+}
+
+
+.jumbotron {
+  background-image: url("../images/MAT Amtech Logo.bmp");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+.navbar {
+  background: -webkit-linear-gradient(top,
+    rgba(0,0,0,1), rgba(0,0,0,.6)) !important;
+  background: -moz-linear-gradient(top,
+    rgba(0,0,0,1), rgba(0,0,0,.6)) !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+ul {
+  list-style-type: none;
+}
+#home {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 100;
+}
+#find {
+  font-weight: bold;
+  font-size: 20px;
+}
+#address {
+  font-size: 18px;
+}
+.border {
+  position: absolute;
+  top: 90px;
+  background-color: rgba(248, 248, 248, 0.6);
+  max-width: 876px;
+  margin-left: 30%;
+  margin-right: 30%;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Londrina+Solid"
+  rel="stylesheet">
+  <title>Midland Automation Technology Limited</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/web.css" rel="stylesheet">
+  <link href="css/contactus.css" rel="stylesheet">
+  <meta name="viewport" content="width-device-width,
+  intial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button"
+                class="collapsed navbar-toggle"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-9"
+                aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="home.html" class="navbar-brand">Midland Automation Technology Limited</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+        <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="companyhistory.html">Company History</a></li>
+          <li  class="active"><a href="contactus.html">Contact us</a></li>
+          <li><a href="accrediations.html">Accrediations</a></li>
+          <li><a href="pastprojects.html">Past Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="main" style="margin-top:60px">
+  <div class="border">
+<h1>Contact </h1>
+<!-- Contact Us form -->
+<div class="container-fluid">
+	<form action="https://formspree.io/smackle@matl.co.uk.com" method="POST"> <!-- fix -->
+        <div class="form-group">
+    
+        <label for="first_name">First Name</label>
+        <input type="text" name="first-name"class="form-control" id="first_name" placeholder="Enter your First Name" required>
+        </div>
+    
+        <!-- Second name input -->
+        <div class="form-group">
+            <label for="second_name">Second Name</label>
+            <input type="text" name="second-name" class="form-control" id="second_name" placeholder="Enter your Second Name" required>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" name="email" class="form-control" id="email"  placeholder="Enter a vaild email address" required>
+        </div>
+
+        <!-- Subject input -->
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" name="query-subject" class="form-control" id="subject"  placeholder="Enter your subject" required>
+        </div>
+
+        <!-- Textarea input -->
+        <div class="form-group">
+            <label for="message">Query</label>
+            <textarea  name="query" id="message" class="form-control" placeholder="Please enter your question here" cols="30" rows="4" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" name="submit" class="btn btn-primary">Send</button>
+
+        <!-- Reset Button -->
+        <button type="reset" name="reset" class="btn btn-primary">Reset</button>
+                    
+            <!-- End of Contact Form -->
+    </form>
+</div>
+
+<!-- Scripts -->
+<footer>
+    <p>© 2018 Copyright: Midland Automation Technology Limited </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  background: url("../images/Immingham RFT.bmp");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main > h2 {
+  margin-top: 80px;
+}
+
+#fh {
+  background: url("../images/lambs.jpeg");
+  background-size: cover;
+}
+#rm {
+  background: url("../images/fence heifers.jpeg");
+  background-size: cover;
+}
+#man {
+  background: url("../images/mower.jpg");
+  background-size: cover;
+}
+
+.job-list {
+  padding: 10px 40px 10px 10px;
+  background-size: cover;
+  position: relative;
+  border-radius: 12px;
+}
+
+.job-list > ul > li > div > ul {
+  height: 400px;
+}
+
+.job-item {
+  background-color: white;
+  margin-top: 10px;
+  max-height: 340px;
+  max-width: 794px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.job-item ul {
+  margin-top: 20px;
+  padding: 30px;
+  max-height: 340px;
+  max-width: 794px;
+}
+
+.job-item li {
+    color: #080808;
+}
+
+form {
+  background: #aaaa;
+}

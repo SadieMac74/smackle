@@ -1,0 +1,53 @@
+body {
+  background-image: url("../images/products.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+p {
+  color: #080808;
+}
+#milk {
+  background: url("../images/milk.jpg");
+  background-size: cover;
+}
+#beef {
+  background: url("../images/beefcuts.png");
+  background-size: cover;
+}
+#lamb {
+  background: url("../images/lambcuts.png");
+  background-size: cover;
+}
+
+.prod-list {
+  padding: 10px 40px 10px 10px;
+  background-size: cover;
+  position: relative;
+  border-radius: 12px;
+}
+
+.prod-list > ul > li > div > ul {
+  height: 400px;
+}
+
+.prod-item {
+  background-color: white;
+  margin-top: 10px;
+  max-height: 500px;
+  max-width: 794px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.prod-item ul {
+  margin-top: 20px;
+  padding: 30px;
+  max-height: 340px;
+  max-width: 794px;
+}
+
+.prod-item li {
+    color: #080808;
+}
